@@ -1,0 +1,29 @@
+{
+    "name": "api",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "server": "node ./bin/www",
+        "client": "npm start --prefix ../client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "dependencies": {
+        "@cloudant/cloudant": "^4.3.0",
+        "concurrently": "^5.3.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^8.2.0",
+        "express": "~4.16.1",
+        "express-session": "^1.17.1",
+        "http-errors": "~1.6.3",
+        "ibmcloud-appid": "^6.1.1",
+        "jade": "~1.11.0",
+        "morgan": "~1.9.1",
+        "passport": "^0.4.1",
+        "sqlite3": "^5.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
